@@ -109,7 +109,7 @@
                     <input type="text" class="form-control mb-3" id="nombrePelicula" placeholder="Nombre de la película" required>
                     <label for="horarioPelicula">Horario</label>
                     <select class="form-select mb-3" name="horarioPelicula" id="horarioPelicula">
-                        <option selected>Selecciona una hora</option>
+                        <option disabled selected>Selecciona una hora</option>
                         <option value="1">18:00 hrs</option>
                         <option value="2">20:00 hrs</option>
                         <option value="3">22:00 hrs</option>
@@ -127,14 +127,15 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-success m-3" data-bs-dismiss="modal">Confirmar reserva</button>
+                <button type="submit" class="btn btn-success m-3 confirmButton" data-bs-dismiss="modal">Confirmar reserva</button>
                 <button type="button" class="btn btn-secondary m-3">Cancelar</button>
             </div>
             </div>
         </div>
     </div>
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
