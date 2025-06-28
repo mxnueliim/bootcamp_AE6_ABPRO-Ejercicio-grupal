@@ -16,6 +16,17 @@ $(document).ready(function () {
 
     $('.confirmButton').on('click', function (e) {
         e.preventDefault();
-        alert('Reserva confirmada para la película ' + $('#nombrePelicula').val() + ' a las ' + $('#horarioPelicula option:selected').text());
-    })
+
+        const formPrincipal = document.querySelector('.needs-validation');
+
+        if (!formPrincipal.checkValidity()) {
+            formPrincipal.classList.add('was-validated');
+            return
+        } else {
+            alert('Reserva confirmada para la película ' + $('#nombrePelicula').val() + ' a las ' + $('#horarioPelicula option:selected').text());
+        }
+
+        
+    });
+
 });
